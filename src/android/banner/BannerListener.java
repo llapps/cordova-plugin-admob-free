@@ -41,6 +41,8 @@ class BannerListener extends AdListener {
         }
         executor.fireAdEvent("admob.banner.events.EXIT_APP", data);
         executor.fireAdEvent("onLeaveToAd", data);
+        MediationTestSuite.launch(MainActivity.this);
+
     }
 
     @Override
